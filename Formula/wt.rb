@@ -44,8 +44,6 @@ class Wt < Formula
     end
   end
 
-  bottle :unneeded
-
   test do
     system "#{bin}/wt", "--help"
   end
