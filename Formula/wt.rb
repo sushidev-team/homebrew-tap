@@ -5,21 +5,21 @@
 class Wt < Formula
   desc "A convenient CLI for managing git worktrees"
   homepage "https://github.com/sushidev-team/worktree-manager"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.0/worktree-manager_1.1.0_darwin_amd64.tar.gz"
-      sha256 "6aae7a1b1cedb16a8a476c992d01f79ca1160d9d51ade38d68bb692df321d795"
+      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.1/worktree-manager_1.1.1_darwin_amd64.tar.gz"
+      sha256 "0a80b95a3f52396d81d8a94e313c349012efd35cde08e26e52de9c27975db059"
 
       define_method(:install) do
         bin.install "wt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.0/worktree-manager_1.1.0_darwin_arm64.tar.gz"
-      sha256 "102252ff0fb6a13d7eb8d4130fe7c0962c05588e1acdef6092de29e501195a9d"
+      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.1/worktree-manager_1.1.1_darwin_arm64.tar.gz"
+      sha256 "b65c90e064f51366a77172c9785330c8825d2f41e841f3ad49b5943b2d2e320b"
 
       define_method(:install) do
         bin.install "wt"
@@ -29,15 +29,15 @@ class Wt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.0/worktree-manager_1.1.0_linux_amd64.tar.gz"
-      sha256 "248e1b00c5eaa9664169957b0866edee3d47f72b423f3af72fcf2d5ad1fd8d35"
+      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.1/worktree-manager_1.1.1_linux_amd64.tar.gz"
+      sha256 "d5b8bd22a1674456211f0004efb2ca0970b2de93a5fb81a3d521f8093b7d4eb7"
       define_method(:install) do
         bin.install "wt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.0/worktree-manager_1.1.0_linux_arm64.tar.gz"
-      sha256 "5c4f76bf4f04e45d02d78a06bbba20087ebf0e92403ceb6dfaedfe028aba61c0"
+      url "https://github.com/sushidev-team/worktree-manager/releases/download/v1.1.1/worktree-manager_1.1.1_linux_arm64.tar.gz"
+      sha256 "70842c8a15a18831e17600972a6542744cf5dcb8b70afacf9dd75196f767b828"
       define_method(:install) do
         bin.install "wt"
       end
